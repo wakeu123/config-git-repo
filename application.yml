@@ -1,5 +1,6 @@
 config:
-  repo: WAKEU Georges Favier
+  authorName: 'WAKEU Georges Favier'
+  authorEmail: 'georgeswakeu21@gmail.com'
 
 management:
   endpoints:
