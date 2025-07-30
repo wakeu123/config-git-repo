@@ -15,11 +15,11 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8181/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
   instance:
     preferIpAddress: true
     hostname: localhost
-    nonSecurePort: 8181
+    nonSecurePort: 8080
 
 
 spring:
