@@ -4,4 +4,4 @@ spring:
     gateway:
       discovery:
         locator:
-          lower-case-service-id: true # Ceci permet de convertir le nom du MS dans le path en minuscule
+          lower-case-service-id: true # Ceci permet de convertir le nom du MS dans le path en minuscule EX http://localhost:9999/product-service/api/products en http://localhost:9999/PRODUCT-SERVICE/api/products
