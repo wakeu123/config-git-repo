@@ -17,3 +17,6 @@ spring:
 server:
   servlet:
     context-path: /api
+
+springdoc:
+  default-produces-media-type: application/json
