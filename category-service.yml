@@ -1,8 +1,19 @@
+info:
+  application:
+    name: CATEGORY-SERVICE
+    version: 1.0.0
+    maintainer:
+      author: WAKEU Georges Favier
+      email: georgeswakeu21@gmail.com
+
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+  info:
+    build:
+      enabled: true
 
 spring:
   h2:
