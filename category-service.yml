@@ -32,4 +32,11 @@ server:
     context-path: /api
 
 springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tagsSorter: alpha
+    operationsSorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  show-actuator: true
   default-produces-media-type: application/json
