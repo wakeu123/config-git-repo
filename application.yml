@@ -4,7 +4,7 @@ config:
 
 logging:
   file:
-    name: ./schoolMaster/8/logs/${spring.application.name}.log
+    name: //${user.home}/.schoolMaster/8/logs/${spring.application.name}.log
 
 management:
   endpoints:
