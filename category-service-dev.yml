@@ -25,7 +25,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: update  # CHANGÉ: create-drop vers update pour dev
+      ddl-auto: create-drop  # CHANGÉ: create-drop vers update pour dev
     show-sql: true  # CHANGÉ: false vers true pour dev
     properties:
       hibernate:
