@@ -2,6 +2,10 @@ config:
   authorName: 'WAKEU Georges Favier'
   authorEmail: 'georgeswakeu21@gmail.com'
 
+logging:
+  file:
+    name: ./schoolMaster/8/logs/${spring.application.name}.log
+
 management:
   endpoints:
     web:
