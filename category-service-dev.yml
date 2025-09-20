@@ -1,4 +1,4 @@
-
+# ===== category-service-dev.yml (Config Server) =====
 server:
   servlet:
     context-path: /api
@@ -12,7 +12,7 @@ spring:
     password: admin
     driver-class-name: org.postgresql.Driver
     
-    # Configuration du pool de connexions HikariCP (optionnel)
+    # Configuration du pool de connexions HikariCP
     hikari:
       maximum-pool-size: 10
       minimum-idle: 5
@@ -25,13 +25,12 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: create-drop  # Options: create, create-drop, update, validate, none
-    show-sql: false  # Mettre à true pour voir les requêtes SQL en développement
+      ddl-auto: update  # CHANGÉ: create-drop vers update pour dev
+    show-sql: true  # CHANGÉ: false vers true pour dev
     properties:
       hibernate:
         format_sql: true
         use_sql_comments: true
-        # Configuration spécifique PostgreSQL
         dialect: org.hibernate.dialect.PostgreSQLDialect
         jdbc:
           batch_size: 20
