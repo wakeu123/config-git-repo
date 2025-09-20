@@ -22,7 +22,7 @@ eureka:
     instanceId: ${spring.application.name}:${server.port}
     preferIpAddress: true
     hostname: localhost
-    nonSecurePort: 8080
+#    nonSecurePort: 8080
 
 
 spring:
